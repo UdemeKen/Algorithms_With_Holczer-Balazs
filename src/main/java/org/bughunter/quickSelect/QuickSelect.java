@@ -34,7 +34,7 @@ public class QuickSelect {
         nums[lastIndex] = temp;
     }
 
-    private int quickSelect(int firstIndex, int lastIndex, int k){
+    private int quickSelect(int firstIndex, int lastIndex, int k) {
         int pivotIndex = partition(firstIndex, lastIndex);
         if (pivotIndex < k){
 //            We have to discard the left subarray, so we have to consider the items on the right
